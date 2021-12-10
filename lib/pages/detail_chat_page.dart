@@ -173,8 +173,8 @@ class DetailChatPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: backgroundColor3,
       appBar: header(),
-      bottomNavigationBar: chatInput(),
       body: content(),
+      bottomNavigationBar: chatInput(),
     );
   }
 }
