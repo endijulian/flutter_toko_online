@@ -263,8 +263,47 @@ class _ProductPageState extends State<ProductPage> {
                 ],
               ),
             ),
-            SizedBox(
-              height: 100,
+
+            //BUTTONS
+            Container(
+              width: double.infinity,
+              margin: EdgeInsets.all(defaultMargin),
+              child: Row(
+                children: [
+                  Container(
+                    width: 54,
+                    height: 54,
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                      image: AssetImage('assets/btn_chat.png'),
+                    )),
+                  ),
+                  SizedBox(
+                    width: 16,
+                  ),
+                  Expanded(
+                    child: Container(
+                      height: 54,
+                      child: TextButton(
+                        onPressed: () {},
+                        style: TextButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          backgroundColor: primaryColor,
+                        ),
+                        child: Text(
+                          'Add to Cart',
+                          style: primaryTextStyle.copyWith(
+                            fontSize: 16,
+                            fontWeight: semiBold,
+                          ),
+                        ),
+                      ),
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
