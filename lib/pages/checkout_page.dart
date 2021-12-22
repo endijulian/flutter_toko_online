@@ -242,8 +242,8 @@ class CheckoutPage extends StatelessWidget {
             ),
             child: TextButton(
               onPressed: () {
-                // Navigator.pushAndRemoveUntil(
-                //     context, '/checkout-success', (route) => false);
+                Navigator.pushNamedAndRemoveUntil(
+                    context, '/checkout-success', (route) => false);
               },
               style: TextButton.styleFrom(
                 backgroundColor: primaryColor,
