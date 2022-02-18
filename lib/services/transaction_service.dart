@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import '../models/cart_model.dart';
 
 class TransactionService {
-  String baseUrl = 'http://192.168.103.79:8000/api';
+  String baseUrl = 'http://192.168.0.112:8000/api';
 
   Future<bool> checkout(
     String token,
